@@ -40,6 +40,6 @@ class EchoHandler(BaseHTTPRequestHandler):
         self.wfile.write(path)
 
 if __name__ == '__main__':
-    server_address = ('', 8000)  # Serve on all addresses, port 8000.
+    server_address = ('', 80)  # Serve on all addresses, port 80.
     httpd = HTTPServer(server_address, EchoHandler)
     httpd.serve_forever()
